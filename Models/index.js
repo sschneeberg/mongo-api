@@ -8,5 +8,5 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 module.exports = {
-    modelPlaceholder: require('./Placeholder')
+    Colors: require('./Color')
 };
