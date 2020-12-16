@@ -13,10 +13,10 @@ router.get('/', (req, res) => {
         });
 });
 
-router.get('/:id', (req, res) => {
-    db.Colors.find()
-        .then((colors) => {
-            res.status(200).json({ color: colors[req.params.id - 1] });
+router.get('/:name', (req, res) => {
+    db.Colors.findOne({ name: req.params.name })
+        .then((color) => {
+            res.status(200).json({ color: color });
         })
         .catch((err) => {
             res.send(err);

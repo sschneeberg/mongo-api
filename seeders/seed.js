@@ -7,7 +7,9 @@ db.Colors.create({
     hsv: { hue: 360, saturation: 100, value: 100 },
     cmyk: { cyan: 100, magenta: 100, yellow: 100, black: 100 }
 });
+*/
 
+/*
 db.Colors.create({
     name: 'red',
     hex: '#ff0000',
