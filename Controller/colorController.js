@@ -33,8 +33,14 @@ router.post('/', (req, res) => {
         });
 });
 
-router.put('/:id', (req, res) => {
-    res.send('put colors');
+router.put('/:name', (req, res) => {
+    db.Colors.updateOne({ name: req.params.name }, { name: req.body.name })
+        .then(() => {
+            res.status(200).json({ updated: true });
+        })
+        .catch((err) => {
+            res.send(err);
+        });
 });
 
 router.delete('/:name', (req, res) => {

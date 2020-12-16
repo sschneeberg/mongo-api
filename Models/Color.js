@@ -6,7 +6,7 @@ const rgbSchema = new mongoose.Schema({
     blue: { type: Number, min: 0, max: 255 }
 });
 const hsvSchema = new mongoose.Schema({
-    hue: { type: Number, min: 0, max: 255 },
+    hue: { type: Number, min: 0, max: 360 },
     saturation: { type: Number, min: 0, max: 100 },
     value: { type: Number, min: 0, max: 100 }
 });

@@ -4,7 +4,7 @@ db.Colors.create({
     name: 'model entry',
     hex: 'hex value',
     rgb: { red: 255, green: 255, blue: 255 },
-    hsv: { hue: 255, saturation: 100, value: 100 },
+    hsv: { hue: 360, saturation: 100, value: 100 },
     cmyk: { cyan: 100, magenta: 100, yellow: 100, black: 100 }
 });
 
